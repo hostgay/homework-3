@@ -15,7 +15,7 @@ public class BankAccount {
 
     public void withDraw(int sum) throws LimitException {
         if (sum > amount) {
-            throw new LimitException("Not enough funds on the account", amount);
+            throw new LimitException("Недостаточно средств на счете", amount);
         } else {
             amount -= sum;
         }
