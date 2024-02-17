@@ -7,7 +7,7 @@ public class Main {
                 account.withDraw(6000);
             }
         } catch (LimitException e) {
-            System.out.println(e.getMessage() + ", remaining amount: " + e.getRemainingAmount());
+            System.out.println(e.getMessage() + ", остаток на счету: " + e.getRemainingAmount());
         }
 
         account.getInfo();
